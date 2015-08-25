@@ -81,6 +81,7 @@ if( ! isset( $on_hold_message ) )
 
 
 		<input type="submit" name="submit" value="Login" id="submit_button"  />
+		<input type="reset" name="RESET" value="RESET" id=""  />
 
 	</div>
 </form>

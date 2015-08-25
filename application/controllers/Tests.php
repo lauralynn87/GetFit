@@ -20,6 +20,7 @@ class Tests extends CI_Controller {
 
 	public function offices()
 	{
+		
 		$output = $this->grocery_crud->render();
 
 		$this->_example_output($output);

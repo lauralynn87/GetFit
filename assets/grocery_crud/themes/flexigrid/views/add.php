@@ -30,9 +30,9 @@
 					$even_odd = $counter % 2 == 0 ? 'odd' : 'even';
 					$counter++;
 			?>
-			<div class='form-field-box <?php echo $even_odd?>' id="<?php echo $field->field_name; ?>_field_box">
+			<div class='form-field-box  <?php echo $even_odd?>' id="<?php echo $field->field_name; ?>_field_box">
 				<div class='form-display-as-box' id="<?php echo $field->field_name; ?>_display_as_box">
-					<?php echo $input_fields[$field->field_name]->display_as; ?><?php echo ($input_fields[$field->field_name]->required)? "<span class='required'>*</span> " : ""; ?> :
+					<?php echo $input_fields[$field->field_name]->display_as; ?><?php echo ($input_fields[$field->field_name]->required)? "<span class='required '>*</span> " : ""; ?> :
 				</div>
 				<div class='form-input-box' id="<?php echo $field->field_name; ?>_input_box">
 					<?php echo $input_fields[$field->field_name]->input?>
@@ -78,4 +78,15 @@
 
 	var message_alert_add_form = "<?php echo $this->l('alert_add_form')?>";
 	var message_insert_error = "<?php echo $this->l('insert_error')?>";
+</script>
+
+
+    
+<script type="text/javascript">
+/*
+$("form").addClass("form-horizontal");
+$("input").removeClass("field-user_level");
+$("input").removeClass(" form-display-as-box");
+$("input").addClass("form-control");
+*/
 </script>

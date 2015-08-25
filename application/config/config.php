@@ -498,3 +498,8 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+
+
+$config['appId']   = '399916276884022';
+$config['secret']  = '593d0fbe9e08b400f7d7c644750c16b8';
+

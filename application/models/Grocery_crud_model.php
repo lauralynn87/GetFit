@@ -28,7 +28,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
  * @version    	1.2
  * @link		http://www.grocerycrud.com/documentation
  */
-class Grocery_crud_model extends CI_Model  {
+class Grocery_crud_model extends MY_Model  {
 	
 
 	protected $primary_key = null;

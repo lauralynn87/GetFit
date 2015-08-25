@@ -145,7 +145,7 @@ $autoload['model'] = array();
 	);
 
 	$autoload['libraries'] = array(
-		'database','session','tokens','Authentication'
+		'database','session','tokens','Authentication','facebook'
 	);
 
 	$autoload['helper'] = array(

@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 if( ! isset( $optional_login ) )
 {
-	echo '<h1>Login</h1>';
+	echo '<h1>Login !</h1>';
 }
 
 if( ! isset( $on_hold_message ) )
@@ -81,6 +81,7 @@ if( ! isset( $on_hold_message ) )
 
 
 		<input type="submit" name="submit" value="Login" id="submit_button"  />
+		<input type="reset" name="RESET" value="RESET" />
 
 	</div>
 </form>

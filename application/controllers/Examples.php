@@ -226,9 +226,11 @@ class Examples extends MY_Controller
 
         $this->setup_login_form();
 
-        $html = $this->load->view('examples/page_header', '', TRUE);
-        $html .= $this->load->view('examples/login_form', '', TRUE);
-        $html .= $this->load->view('examples/page_footer', '', TRUE);
+       // $html = $this->load->view('examples/page_header', '', TRUE);
+      //  $html .= $this->load->view('examples/login_form', '', TRUE);
+       // $html .= $this->load->view('examples/page_footer', '', TRUE);
+       
+        $html = $this->load->view('examples/login_form', '', TRUE);
 
         echo $html;
     }
