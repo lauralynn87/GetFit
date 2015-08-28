@@ -2,8 +2,8 @@
 
 
 
-$config['appId']   = '400682860140697';
-$config['secret']  = 'ac556a071bf418ddfbe90c14584c4016';
+$config['appId']   = '174424532889062';
+$config['secret']  = '313da412a693d2eeebc3b8edb86367ce';
 
 
 ?>
