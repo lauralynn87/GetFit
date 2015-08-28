@@ -70,11 +70,25 @@ a:hover
         
         <li><a href='<?php echo site_url('activities/showgoals')?>'>GOALS</a> </li>
         <li><a href='<?php echo site_url('activities/showactivities')?>'>ACTIVITIES</a> </li>
-          <?php if (isset($auth_user_id)){
+          <?php
+	$this->load->library('facebook');
+          if (isset($auth_user_id)){
         	?>
         	<li><a href='<?php echo site_url('examples/logout')?>'>LOGOUT</a> </li>
         	<?php 
-        }?>	
+        }elseif($this->facebook->getuser()){
+        	?>
+        	<li><a href='<?php echo site_url('examples/logout')?>'>LOGOUT</a> </li>
+        	
+        	<?php 
+        }else{
+        	
+        }
+        
+        
+        
+        
+        ?>	
       </ul>
       
       
@@ -117,7 +131,7 @@ foreach ($data as $tmp) {
 	foreach ($tmp as $key=>$value) {
 	echo "<td>";	
 		
-		if ($key==='duration'  && $value!=0){
+		if ($key==='duration'  &&  $value!=0){
 			
 			$time2 = $value;
 			$seconds = strtotime("1970-01-01 $time2 UTC");
@@ -126,21 +140,16 @@ foreach ($data as $tmp) {
 			
 			$temptime=$seconds-$time;
 			$lefttime=$temptime;
-			$t=floatval((100*$time)/$seconds) 	 ;// completed percent
-			$remaining =100-$t;//remaining percent
 			
 			
-			$hourscompleted=$time/60;
-			echo"Completed Hours: $hourscompleted Hours"; 
-			echo"<br>";
-			echo "Completed Seconds: $time seconds";
-			echo"<br>";
-			$minutetime=$seconds/60;
-			echo"Total Hour Time: $minutetime Minutes";echo"<br>";
-			$hourtime=$seconds/3600;
+			$lefttime=$lefttime/3600;
+			echo"Completed Hours: $lefttime completed Hours"; 
+				echo"<br>";
+				$seconds=$seconds/3600;
+			echo "Total Hours Time: $seconds Hours";
 			
-			echo "Total Hours Time: $hourtime Hours";
-			echo"<br>";
+			
+		
 			
 			//echo"%";
 			

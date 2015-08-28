@@ -203,19 +203,14 @@ Not Registered <a href="activities/signup">Sign Up</a>
                     <div class="social">
                       <h3>Login by another ways</h3>
                       <p class="desc">
-                        Integer ornare libero nisi. Duis ac magna urna. Nulla facilisi:
+                        Use Facebook for logging in
                       </p>
                       <div class="socialLogin">
 
-                      <a class="btn btn-block btn-social btn-facebook">
+                      <a href="/getfit/index.php/activities/fblogin" class="btn btn-block btn-social btn-facebook">
                         <i class="fa fa-facebook"></i> Sign in with Facebook
                       </a>
-                      <a class="btn btn-block btn-social btn-twitter">
-                        <i class="fa fa-twitter"></i> Sign in with Twitter
-                      </a>
-                      <a class="btn btn-block btn-social btn-google">
-                        <i class="fa fa-google"></i> Sign in with Google
-                      </a>
+                      
                     </div>
                   </div>
             </div>

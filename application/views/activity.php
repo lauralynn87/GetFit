@@ -91,7 +91,17 @@ a:hover
         	?>
         	<li><a href='<?php echo site_url('examples/logout')?>'>LOGOUT</a> </li>
         	<?php 
-        }?>
+        }
+        elseif($this->facebook->getuser()){
+        	?>
+        	<li><a href='<?php echo site_url('examples/logout')?>'>LOGOUT</a> </li>
+        	
+        	<?php 
+        }else{
+        	
+        }
+        
+        ?>
         
       </ul>
       
